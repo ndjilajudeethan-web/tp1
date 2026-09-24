@@ -30,8 +30,8 @@ Les utilisateurs doivent être capables de :
 
 ### Liens
 
-- URL de la solution : [Lien vers mon dépôt GitHub](https://github.com)
-- URL du site en direct : [Lien vers GitHub Pages](https://github.io)
+- URL de la solution : [Lien vers mon dépôt GitHub](https://github.com/ndjilajudeethan-web/tp1)
+- URL du site en direct : [Lien vers GitHub Pages](https://ndjilajudeethan-web.github.io/tp1/)
 
 ## Mon Processus
 
@@ -44,8 +44,12 @@ Les utilisateurs doivent être capables de :
 
 ### Ce que j'ai appris
 
+comment faire des grid, grid template, menus reactifs avec javascript et rappel sur display:flex et ses propriétés
+
 ### Développement continu
 
-Pour mes prochains projets, je souhaite approfondir :
+Pour mes prochains projets, je souhaite approfondir : Le css et organization des contenus dans la pages avec grid
 
 ## Auteur
+
+Jude Ndjila
