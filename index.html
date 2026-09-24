@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/menu.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-menu">
+        <span class="nav-menu__logo">FOULÉE</span>
+        <button
+          class="nav-menu__toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu-list"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="nav-menu__hamburger-icon" aria-hidden="true"></span>
+          <span class="nav-menu__libelle">Menu</span>
+        </button>
+
+        <ul id="nav-menu-list" class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="#HOMMES">HOMMES</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="#FEMMES">FEMMES</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="#ENFANTS">ENFANTS</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="#SPORT">SPORT</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="#PERSONNALISER">PERSONNALISER</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link" href="#FOULÉE">FOULÉE</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main__catalogue-header">
+        <nav class="fil-ariane">
+          <ul class="fil-ariane__liste">
+            <li><a href="#ACCUEIL">Accueil</a></li>
+            <li>
+              <span class="fil-ariane__separateur">></span
+              ><a href="index.html" aria-current="page">Chaussures</a>
+            </li>
+          </ul>
+        </nav>
+        <h1>CHAUSSURES</h1>
+        <p>12 produits</p>
+        <div class="main__button-tri">
+          <button class="main__button-tri--tous" id="tri_tous">TOUS</button>
+          <button class="main__button-tri--hommes" id="tri_hommes">
+            HOMMES
+          </button>
+          <button class="main__button-tri--femmes" id="tri_femmes">
+            FEMMES
+          </button>
+          <button class="main__button-tri--enfants" id="tri_enfants">
+            ENFANTS
+          </button>
+        </div>
+      </div>
+      <div class="barre-outils">
+        <button
+          class="barre-outils__button-masquer-filtres"
+          id="masquer-filtres"
+        >
+          <img src="" alt="" />MASQUER LES FILTRES
+        </button>
+        <div>
+          <label for="tri" class="barre-outils__label-tri">Trier par :</label>
+          <select class="barre-outils__select-tri" id="tri">
+            <option value="nouveautés">Nouveautés</option>
+            <option value="...">...</option>
+            <option value="...">...</option>
+            <option value="...">...</option>
+          </select>
+        </div>
+      </div>
+      <div class="main__catalogue-layout">
+        <section class="main__section_filtres" id="filtres">
+          <fieldset class="main__fieldset_filtres">
+            <fieldset class="main__fieldset_filtres--sport">
+              <legend>SPORT</legend>
+              <input type="checkbox" id="sport1" name="sport" value="Course" />
+              <label for="sport1">Course</label><br />
+              <input
+                type="checkbox"
+                id="sport2"
+                name="sport"
+                value="Basketball"
+              />
+              <label for="sport2">Basketball</label><br />
+              <input
+                type="checkbox"
+                id="sport3"
+                name="sport"
+                value="Football"
+              />
+              <label for="sport3">Football</label><br />
+              <input
+                type="checkbox"
+                id="sport4"
+                name="sport"
+                value="Training"
+              />
+              <label for="sport4">Training</label><br />
+              <input
+                type="checkbox"
+                id="sport5"
+                name="sport"
+                value="Lifestyle"
+              />
+              <label for="sport5">Lifestyle</label><br />
+            </fieldset>
+
+            <hr />
+
+            <fieldset class="main__fieldset_filtres--prix">
+              <legend>PRIX</legend>
+              <input type="checkbox" id="prix1" name="prix" value="0-80" />
+              <label for="prix1">0-80 €</label><br />
+              <input type="checkbox" id="prix2" name="prix" value="80-120" />
+              <label for="prix2">80-120 €</label><br />
+              <input type="checkbox" id="prix3" name="prix" value="120-180" />
+              <label for="prix3">120-180 €</label><br />
+              <input type="checkbox" id="prix4" name="prix" value="180<" />
+              <label for="prix4">180 € et plus</label><br />
+            </fieldset>
+
+            <hr />
+
+            <fieldset class="main__fieldset_filtres--couleur">
+              <legend>COULEUR</legend>
+              <input
+                type="checkbox"
+                id="couleur1"
+                name="couleur"
+                value="Blanc"
+              />
+              <label for="couleur1">Blanc</label><br />
+              <input
+                type="checkbox"
+                id="couleur2"
+                name="couleur"
+                value="Noir"
+              />
+              <label for="couleur2">Noir</label><br />
+              <input
+                type="checkbox"
+                id="couleur3"
+                name="couleur"
+                value="Rouge"
+              />
+              <label for="couleur3">Rouge</label><br />
+              <input
+                type="checkbox"
+                id="couleur4"
+                name="couleur"
+                value="Bleu"
+              />
+              <label for="couleur4">Bleu</label><br />
+              <input
+                type="checkbox"
+                id="couleur5"
+                name="couleur"
+                value="Jaune"
+              />
+              <label for="couleur5">Jaune</label><br />
+              <input
+                type="checkbox"
+                id="couleur6"
+                name="couleur"
+                value="Gris"
+              />
+              <label for="couleur6">Gris</label><br />
+            </fieldset>
+
+            <hr />
+
+            <fieldset class="main__fieldset_filtres--pointure">
+              <legend>POINTURE</legend>
+              <input type="checkbox" id="pointure1" name="taille" value="36" />
+              <label for="pointure1">36</label><br />
+              <input type="checkbox" id="pointure2" name="taille" value="37" />
+              <label for="pointure2">37</label><br />
+              <input type="checkbox" id="pointure3" name="taille" value="38" />
+              <label for="pointure3">38</label><br />
+              <input type="checkbox" id="pointure4" name="taille" value="39" />
+              <label for="pointure4">39</label><br />
+              <input type="checkbox" id="pointure5" name="taille" value="40" />
+              <label for="pointure5">40</label><br />
+              <input type="checkbox" id="pointure6" name="taille" value="41" />
+              <label for="pointure6">41</label><br />
+              <input type="checkbox" id="pointure7" name="taille" value="42" />
+              <label for="pointure7">42</label><br />
+              <input type="checkbox" id="pointure8" name="taille" value="43" />
+              <label for="pointure8">43</label><br />
+              <input type="checkbox" id="pointure9" name="taille" value="44" />
+              <label for="pointure9">44</label><br />
+              <input type="checkbox" id="pointure10" name="taille" value="45" />
+              <label for="pointure10">45</label><br />
+            </fieldset>
+          </fieldset>
+        </section>
+        <section class="main__section_catalogue" id="catalogue">
+          <article class="carte-produit">
+            <span class="carte-produit__badge">NOUVEAU</span>
+            <img
+              src="images/men_AirForceFlynit_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">HOMMES</p>
+            <h3 class="carte-produit__nom">AIR FORCE FLYKNIT</h3>
+            <p class="carte-produit__numero-couleur">3 couleurs</p>
+            <p class="carte-produit__prix">$129,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <img
+              src="images/wom_AirForceMidLeather_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">FEMMES</p>
+            <h3 class="carte-produit__nom">AIR FORCE MID LEATHER</h3>
+            <p class="carte-produit__numero-couleur">4 couleurs</p>
+            <p class="carte-produit__prix">$109,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <img
+              src="images/men_AirJordanRetroDecon_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">HOMMES</p>
+            <h3 class="carte-produit__nom">AIR JORDAN RETRO DECON</h3>
+            <p class="carte-produit__numero-couleur">5 couleurs</p>
+            <p class="carte-produit__prix">$189,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <img
+              src="images/men_AirVortex01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">HOMMES</p>
+            <h3 class="carte-produit__nom">AIR VORTEX</h3>
+            <p class="carte-produit__numero-couleur">3 couleurs</p>
+            <p class="carte-produit__prix">$99,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <img
+              src="images/men_CourtBoroughMid_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">HOMMES</p>
+            <h3 class="carte-produit__nom">COURT BOROUGH MID</h3>
+            <p class="carte-produit__numero-couleur">4 couleurs</p>
+            <p class="carte-produit__prix">$79,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <span class="carte-produit__badge">NOUVEAU</span>
+            <img
+              src="images/wom_ClassicCortezNylonB_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">FEMMES</p>
+            <h3 class="carte-produit__nom">CLASSIC CORTEZ NYLON B</h3>
+            <p class="carte-produit__numero-couleur">2 couleurs</p>
+            <p class="carte-produit__prix">$89,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <span class="carte-produit__badge">NOUVEAU</span>
+            <img
+              src="images/men_AirMaxUltraMoire_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">HOMMES</p>
+            <h3 class="carte-produit__nom">AIR MAX ULTRA MOIRE</h3>
+            <p class="carte-produit__numero-couleur">4 couleurs</p>
+            <p class="carte-produit__prix">$149,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <img
+              src="images/wom_AirMaxZero_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">FEMMES</p>
+            <h3 class="carte-produit__nom">AIR MAX ZERO</h3>
+            <p class="carte-produit__numero-couleur">6 couleurs</p>
+            <p class="carte-produit__prix">$119,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <span class="carte-produit__badge">NOUVEAU</span>
+            <img
+              src="images/wom_BlazerLowLX_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">FEMMES</p>
+            <h3 class="carte-produit__nom">BLAZER LOW LX</h3>
+            <p class="carte-produit__numero-couleur">3 couleurs</p>
+            <p class="carte-produit__prix">$109.99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <img
+              src="images/men_CortezUltraMoire_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">HOMMES</p>
+            <h3 class="carte-produit__nom">CORTEZ ULTRA MOIRE</h3>
+            <p class="carte-produit__numero-couleur">5 couleurs</p>
+            <p class="carte-produit__prix">$99,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <img
+              src="images/wom_FlexSupremeTR5b_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">FEMMES</p>
+            <h3 class="carte-produit__nom">FLEX SUPREME TR 5B</h3>
+            <p class="carte-produit__numero-couleur">3 couleurs</p>
+            <p class="carte-produit__prix">$89,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="carte-produit">
+            <span class="carte-produit__badge">NOUVEAU</span>
+            <img
+              src="images/wom_LunarChargeEssential_01.jpg"
+              alt="Chaussure 1"
+              class="carte-produit__image"
+            />
+            <p class="carte-produit__sexe">FEMMES</p>
+            <h3 class="carte-produit__nom">LUNAR CHARGE ESSENTIAL</h3>
+            <p class="carte-produit__numero-couleur">4 couleurs</p>
+            <p class="carte-produit__prix">$119,99</p>
+            <button class="carte-produit__bouton-ajouter-panier">
+              Ajouter au panier
+            </button>
+          </article>
+          <div class="main__section_catalogue-numero-page">
+            <button class="numero-page-precedent"><</button>
+            <button class="numero-page1">1</button>
+            <button class="numero-page2">2</button>
+            <button class="numero-page3">3</button>
+            <button class="numero-page-suivant">></button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__div1">
+        <p>FOULÉE</p>
+        <p>© 2017 FOULÉE.</p>
+        <p>Tous droits réservés 2017.</p>
+      </div>
+      <div class="footer__div2">
+        <div class="footer__menu">
+          <p><a href="#ACCUEIL">ACCUEIL</a></p>
+          <p><a href="#ÀPROPOS">À PROPOS</a></p>
+          <p><a href="#SUPPORT">SUPPORT</a></p>
+          <p><a href="#CONTACT">CONTACT</a></p>
+        </div>
+        <p>
+          FOULÉE est une boutique spécialisée dans la vente de chaussures de
+          sport et de lifestyle. Nous offrons une sélection soigneusement
+          choisie pour hommes, femmes et enfants.
+        </p>
+      </div>
+      <div class="footer__div3">
+        <a href="#"><icon class="icon-twitter"></icon></a>
+        <a href="#"><icon class="icon-facebook"></icon></a>
+        <a href="#"><icon class="icon-instagram"></icon></a>
+      </div>
+    </footer>
+  </body>
+</html>

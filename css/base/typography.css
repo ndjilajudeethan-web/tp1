@@ -1,0 +1,21 @@
+body {
+  font-family: Barlow, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+  h1{
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 40px;
+  }
+  h2{
+    font-family: Barlow Medium, sans-serif;
+    font-size: 13px;
+  }
+  h3{
+    font-family: Barlow SemiBold, sans-serif;
+    font-size: 16px;
+  }
+  h4{
+    font-family: Barlow, sans-serif;
+    font-size: 14px;
+  }

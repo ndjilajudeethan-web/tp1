@@ -1,0 +1,24 @@
+.main {
+  margin: 0 auto;
+}
+.section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.main__section_catalogue {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main__catalogue-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+@media (width > 768px) {
+  .main__section_catalogue {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    align-items: stretch;
+  }
+}
